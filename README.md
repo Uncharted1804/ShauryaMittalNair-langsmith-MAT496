@@ -48,6 +48,12 @@ Understood the different run types (`llm`, `chain`, `tool`, `retriever`) used by
 ![alt text](image.png)
 ![alt text](image-1.png)
 
+## Module 2, Video 3: Experiments
+- **Learned:** Learned that experiments involve running different system configurations (models, prompts, chains) against the same dataset and comparing their metrics using separate projects (sessions) in LangSmith.
+- **My Tweak:** Conducted a two-part experiment comparing a **Baseline** system (`gpt-3.5-turbo`) against an **Experimental** system (`gpt-4o-mini`) using the `ExactMatch` evaluator on the `MAT496-Code-Review-Queries` dataset. Two distinct projects were created in the LangSmith UI for direct comparison.
+- **Source File:** [my_tweaks/m2_v3_experiments_tweak.py](my_tweaks/m2_v3_experiments_tweak.py)
+![alt text](image-2.png)
+![alt text](image-3.png)
 ---
 
 ## Summary
