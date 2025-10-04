@@ -16,7 +16,15 @@ This repository contains the required code and commit history for the **Intro to
   This successfully logged both the input list and the computed sum to my LangSmith project dashboard.
 
 - **Source File:**  
-  [`My_Tweaks/m1_v1_tracing_tweak.py`](my_tweaks/m1_v1_tracing_tweak.py)
+  [`My_Tweaks/m1_v1_tracing_tweaks.py`](my_tweaks/m1_v1_tracing_tweaks.py)
+
+  ## Module 1, Video 2: Types of Runs
+- **Learned:** 
+Understood the different run types (`llm`, `chain`, `tool`, `retriever`) used by LangSmith to categorize and visualize application steps. Learned how to manually assign a `run_type` using the `@traceable` decorator.
+
+- **My Tweak:** Created a custom **`chain`** (`InvestmentChain`) that calls a custom **`tool`** (`StockDataFetcher`) and explicitly set both their `run_type` parameters to demonstrate nested tracing of different execution types.- 
+
+**Source File:** [my_tweaks/m1_v2_run_types_tweak.py](my_tweaks/m1_v2_run_types_tweak.py)
 
 ---
 
