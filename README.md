@@ -36,6 +36,11 @@ Understood the different run types (`llm`, `chain`, `tool`, `retriever`) used by
 - **My Tweak:** Simulated a **two-turn conversational chat** using a consistent `LANGCHAIN_SESSION` ID (`Tweak-Session-496-001`). Both calls to the `ChatResponder` function are logged as linked runs under the single session in LangSmith.
 - **Source File:** [my_tweaks/m1_v4_conversation_thread_tweaks.py](my_tweaks/m1_v4_conversation_thread_tweaks.py)
 
+## Module 2, Video 1: Datasets
+- **Learned:** Understood the structure of a LangSmith Dataset (a set of input/output Examples) and how to programmatically upload these using the `client.create_dataset` and `client.create_example` methods from the Python SDK.
+- **My Tweak:** Created a custom dataset named **`MAT496-Code-Review-Queries`** and uploaded three unique examples to it, verifying the existence of the dataset and examples in the LangSmith UI.
+- **Source File:** [my_tweaks/m2_v1_datasets_tweak.py](my_tweaks/m2_v1_datasets_tweak.py)
+
 ---
 
 ## 🧠 Summary
