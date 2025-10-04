@@ -54,6 +54,13 @@ Understood the different run types (`llm`, `chain`, `tool`, `retriever`) used by
 - **Source File:** [my_tweaks/m2_v3_experiments_tweak.py](my_tweaks/m2_v3_experiments_tweak.py)
 ![alt text](image-2.png)
 ![alt text](image-3.png)
+
+## Module 2, Video 4: Analyzing Experiment Results
+- **Learned:** Learned the importance of structured analysis in LangSmith, specifically how to use project-level **metadata** and run-level **tags** to organize, filter, and track specific versions of a system, which is crucial for drilling down into runs to identify failure patterns.
+- **My Tweak:** Executed the final optimized chain (GPT-4o-mini) on the dataset, ensuring the run was logged to the `MAT496-Final-Submission-Analysis` project with clear `project_metadata` (e.g., version) and descriptive run `tags` (`Final-Submission-Run`).
+- **Source File:** [my_tweaks/m2_v4_analysis_tweak.py](my_tweaks/m2_v4_analysis_tweak.py)
+![alt text](image-4.png)
+![alt text](image-5.png)
 ---
 
 ## Summary
