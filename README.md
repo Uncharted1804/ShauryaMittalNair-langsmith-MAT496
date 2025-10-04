@@ -41,9 +41,16 @@ Understood the different run types (`llm`, `chain`, `tool`, `retriever`) used by
 - **My Tweak:** Created a custom dataset named **`MAT496-Code-Review-Queries`** and uploaded three unique examples to it, verifying the existence of the dataset and examples in the LangSmith UI.
 - **Source File:** [my_tweaks/m2_v1_datasets_tweak.py](my_tweaks/m2_v1_datasets_tweak.py)
 
+## Module 2, Video 2: Evaluators
+- **Learned:** Learned how to utilize built-in LangChain evaluators (such as `ExactMatch`) to automatically score LLM outputs against the `expected_output` in a dataset. Understood that evaluators are passed to `client.run_on_dataset` via the `evaluation` parameter.
+- **My Tweak:** Used the **`ExactMatchStringEvaluator`** to grade the outputs of the `CodeReviewerChain`. This evaluation run was logged to a dedicated project (`MAT496-Code-Review-Exact-Match-Eval`) where the final accuracy metric is now visible in the UI.
+- **Source File:** [my_tweaks/m2_v2_evaluators_tweak.py](my_tweaks/m2_v2_evaluators_tweak.py)
+![alt text](image.png)
+![alt text](image-1.png)
+
 ---
 
-## 🧠 Summary
+## Summary
 Each lesson directory inside `my_tweaks/` includes:
 - A customized code example building on the video’s concepts  
 - Clear comments explaining what was modified  
