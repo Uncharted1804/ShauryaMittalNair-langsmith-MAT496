@@ -22,9 +22,14 @@ This repository contains the required code and commit history for the **Intro to
 - **Learned:** 
 Understood the different run types (`llm`, `chain`, `tool`, `retriever`) used by LangSmith to categorize and visualize application steps. Learned how to manually assign a `run_type` using the `@traceable` decorator.
 
-- **My Tweak:** Created a custom **`chain`** (`InvestmentChain`) that calls a custom **`tool`** (`StockDataFetcher`) and explicitly set both their `run_type` parameters to demonstrate nested tracing of different execution types.- 
+- **My Tweak:** Created a custom **`chain`** (`InvestmentChain`) that calls a custom **`tool`** (`StockDataFetcher`) and explicitly set both their `run_type` parameters to demonstrate nested tracing of different execution types.
 
-**Source File:** [my_tweaks/m1_v2_run_types_tweak.py](my_tweaks/m1_v2_run_types_tweak.py)
+-**Source File:** [my_tweaks/m1_v2_run_types_tweaks.py](my_tweaks/m1_v2_run_types_tweaks.py)
+
+## Module 1, Video 3: Alternative Ways to Trace
+- **Learned:** Understood how to use the `with client.run(...)` context manager for tracing. This allows explicit control over the start and end of a run, which is ideal for wrapping multi-step scripts or sections of code where decorators are not feasible.
+- **My Tweak:** Implemented the context manager to trace a full **"Data Preprocessing Pipeline"** (`run_type="chain"`) that simulates fetching and cleaning data, logging the entire sequence as one run.
+- **Source File:** [my_tweaks/m1_v3_alternate_ways_to_trace_tweak.py](my_tweaks/m1_v3_alternate_ways_to_trace_tweak.py)
 
 ---
 
