@@ -29,7 +29,12 @@ Understood the different run types (`llm`, `chain`, `tool`, `retriever`) used by
 ## Module 1, Video 3: Alternative Ways to Trace
 - **Learned:** Understood how to use the `with client.run(...)` context manager for tracing. This allows explicit control over the start and end of a run, which is ideal for wrapping multi-step scripts or sections of code where decorators are not feasible.
 - **My Tweak:** Implemented the context manager to trace a full **"Data Preprocessing Pipeline"** (`run_type="chain"`) that simulates fetching and cleaning data, logging the entire sequence as one run.
-- **Source File:** [my_tweaks/m1_v3_alternate_ways_to_trace_tweak.py](my_tweaks/m1_v3_alternate_ways_to_trace_tweak.py)
+- **Source File:** [my_tweaks/m1_v3_alternate_ways_to_trace_tweaks.py](my_tweaks/m1_v3_alternate_ways_to_trace_tweaks.py)
+
+## Module 1, Video 4: Conversational Threads
+- **Learned:** Understood that LangSmith groups related runs into a single trace thread using the `LANGCHAIN_SESSION` environment variable. This allows the visualization of a multi-turn conversation or multi-step pipeline as a coherent whole.
+- **My Tweak:** Simulated a **two-turn conversational chat** using a consistent `LANGCHAIN_SESSION` ID (`Tweak-Session-496-001`). Both calls to the `ChatResponder` function are logged as linked runs under the single session in LangSmith.
+- **Source File:** [my_tweaks/m1_v4_conversation_thread_tweaks.py](my_tweaks/m1_v4_conversation_thread_tweaks.py)
 
 ---
 
