@@ -1,34 +1,30 @@
-# Intro to LangSmith
+# ShauryaMittalNair-Langsmith-MAT496  
+**Course Submission for MAT496**
 
-Welcome to Intro to LangSmith!
+This repository contains the required code and commit history for the **Intro to LangSmith** course submission.  
 
-## Introduction
-In this course we will walk through the fundamentals of LangSmith - exploring observability, prompt engineering, evaluations, feedback mechanisms, and production monitoring. Take a look at the setup instructions below so you can follow along with any of our notebook examples.
+
+## Video-by-Video Learning and Tweaks
+
+### Module 1, Video 1: Tracing Basics
+
+- **Learned:**  
+  Understood the fundamental process of setting up LangSmith environment variables (`LANGCHAIN_API_KEY`, `LANGCHAIN_PROJECT`, etc.) and how to use the `@traceable` decorator to automatically log any Python function's execution as a **Run** in LangSmith.
+
+- **My Tweak:**  
+  Instead of using the basic example from the tutorial, I applied the `@traceable` decorator to a function that **calculates the sum of a list of integers** (`SumCalculator`).  
+  This successfully logged both the input list and the computed sum to my LangSmith project dashboard.
+
+- **Source File:**  
+  [`My_Tweaks/m1_v1_tracing_tweak.py`](my_tweaks/m1_v1_tracing_tweak.py)
 
 ---
 
-## Setup
-Follow these instructions to make sure you have all the resources necessary for this course!
+## 🧠 Summary
+Each lesson directory inside `my_tweaks/` includes:
+- A customized code example building on the video’s concepts  
+- Clear comments explaining what was modified  
+- Verified LangSmith tracing results visible in the linked project
 
-### Sign up for LangSmith
-* Sign up [here](https://smith.langchain.com/) 
-* Navigate to the Settings page, and generate an API key in LangSmith.
-* Create a .env file that mimics the provided .env.example. Set `LANGCHAIN_API_KEY` in the .env file.
+---
 
-### Set OpenAI API key
-* If you don't have an OpenAI API key, you can sign up [here](https://openai.com/index/openai-api/).
-* Set `OPENAI_API_KEY` in the .env file.
-
-### Create an environment and install dependencies
-```
-$ cd intro-to-langsmith
-$ python3 -m venv intro-to-ls
-$ source intro-to-ls/bin/activate
-$ pip install -r requirements.txt
-```
-
-### Self-Hosted LangSmith
-Note: If you are using a self-hosted version of LangSmith, you'll need to set this environment variable in addition to the others - see this [guide](https://docs.smith.langchain.com/self_hosting/usage) for more info
-```
-LANGSMITH_ENDPOINT = "<your-self-hosted-url>/api/v1"
-```
