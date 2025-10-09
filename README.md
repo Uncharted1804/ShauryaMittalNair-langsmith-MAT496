@@ -61,6 +61,14 @@ Understood the different run types (`llm`, `chain`, `tool`, `retriever`) used by
 - **Source File:** [my_tweaks/m2_v4_analysis_tweak.py](my_tweaks/m2_v4_analysis_tweak.py)
 ![alt text](image-4.png)
 ![alt text](image-5.png)
+
+
+## Module 3, Video 1: Playground
+- **Learned:** Understood the functionality of the LangSmith **Playground** UI, which allows for real-time, iterative editing and testing of prompts and model parameters based on an existing traceable run, without needing to change the source code.
+- **My Tweak:** Created and executed a simple LangChain component named **`MAT496-Playground-Tweak-Chain`**. I verified the run appeared in the LangSmith Tracing tab and successfully used the Playground to modify the system prompt and re-run the chain.
+- **Source File:** [my_tweaks/m3_v1_playground_setup.py](my_tweaks/m3_v1_playground_setup.py)
+![alt text](<Screenshot 2025-10-09 210203.png>)
+
 ---
 
 ## Summary
