@@ -69,6 +69,10 @@ Understood the different run types (`llm`, `chain`, `tool`, `retriever`) used by
 - **Source File:** [my_tweaks/m3_v1_playground_setup.py](my_tweaks/m3_v1_playground_setup.py)
 ![alt text](<Screenshot 2025-10-09 210203.png>)
 
+## Module 3, Video 2: Prompt Hub
+- **Learned:** Understood the LangSmith **Prompt Hub** as the central repository for storing and sharing prompts. Learned how to access these saved templates programmatically in LangChain using `load_prompt` and the `lc://prompts/<name>` syntax.
+- **My Tweak:** Created the **`m3_v2_prompt_hub_fetch.py`** script to demonstrate loading a previously saved prompt template (`MAT496-Summary-Prompt`) from the Prompt Hub and running a chain with it.
+- **Source File:** [my_tweaks/m3_v2_prompt_hub_fetch.py](my_tweaks/m3_v2_prompt_hub_fetch.py)
 ---
 
 ## Summary
