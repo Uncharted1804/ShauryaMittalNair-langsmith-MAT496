@@ -73,6 +73,22 @@ Understood the different run types (`llm`, `chain`, `tool`, `retriever`) used by
 - **Learned:** Understood the LangSmith **Prompt Hub** as the central repository for storing and sharing prompts. Learned how to access these saved templates programmatically in LangChain using `load_prompt` and the `lc://prompts/<name>` syntax.
 - **My Tweak:** Created the **`m3_v2_prompt_hub_fetch.py`** script to demonstrate loading a previously saved prompt template (`MAT496-Summary-Prompt`) from the Prompt Hub and running a chain with it.
 - **Source File:** [my_tweaks/m3_v2_prompt_hub_fetch.py](my_tweaks/m3_v2_prompt_hub_fetch.py)
+
+## Module 3, Video 3: Prompt Engineering Lifecycle
+- **Learned:** Understood the full prompt engineering workflow within LangSmith: using the **Playground** to edit a prompt, using **Commit** to save a new version to the **Prompt Hub**, and then running an **Evaluation** on a dataset directly from the UI to measure the new prompt's performance.
+- **My Tweak:** I executed a `MAT496-Lifecycle-Demo-Chain`, modified its prompt's sentiment in the Playground, committed the new version as `MAT496-Food-Critic-Prompt`, and ran a UI-based evaluation against a new single-example dataset.
+- **Source File:** [my_tweaks/m3_v3_lifecycle_setup.py](my_tweaks/m3_v3_lifecycle_setup.py)
+![alt text](image-6.png)
+![alt text](image-7.png)
+
+
+## Module 3, Video 4: Prompt Canvas
+- **Learned:** Discovered the **Prompt Canvas**, an advanced UI for visually building and testing prompt templates and chains. Understood how it improves upon the Playground by offering a node-based interface for managing complex interactions.
+- **My Tweak:** I executed a `MAT496-Prompt-Canvas-Demo` chain, opened the resulting trace in the Prompt Canvas, modified the prompt's persona, and saved the new version to the Prompt Hub as `MAT496-Itinerary-Prompt`.
+- **Source File:** [my_tweaks/m3_v4_prompt_canvas_setup.py](my_tweaks/m3_v4_prompt_canvas_setup.py)
+- **Langsmith UI:**[(https://smith.langchain.com/o/ab43f7bd-1118-4848-9123-518f8a6a4500/projects/p/5c3bff74-9125-4483-b9ca-e64565821f0f?timeModel=%7B%22duration%22%3A%227d%22%7D)]
+![alt text](image-8.png)
+
 ---
 
 ## Summary
